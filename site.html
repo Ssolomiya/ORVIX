@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORVIX — Secure Critical Infrastructure Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="images/logo11.png"> 
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+
+    <nav>
+        <div class="logo">ORVIX<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#itworks">Architecture</a></li>
+            <li><a href="#space-data">Space Data</a></li>
+            <li><a href="#demo">Prototype & Demo</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="hero">
+        <div class="hero-badge">
+            <span></span> CASSINI Hackathon Project
+        </div>
+        <h1>Resilient Navigation for Critical Infrastructure Under GNSS Spoofing</h1>
+        <p>A dual-layer offline navigation system designed for emergency vehicles. 
+            It detects signal manipulation in real-time and transitions to visual
+             landmark recognition when satellite data fails.</p>
+        <a href="#demo" class="btn-primary">Download APK & Demo</a>
+    </section>
+
+   
+    <section id="itworks">
+        <h2>How It Works</h2>
+        <p class="section-desc">A seamless multi-stage pipeline
+             bridging satellite reconnaissance and edge Android 
+             processing.</p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-number">01 / PRE-TRIP</div>
+                <h3>Laptop Data Preparation</h3>
+                <p>Aggregating Copernicus EMS satellite layers and filtering threat zones via automated text analytics before deployment.</p>
+            </div>
+            <div class="card">
+                <div class="card-number">02 / PACKAGING</div>
+                <h3>Offline Route Package</h3>
+                <p>Compiling localized GeoJSON maps, road networks, and verified visual landmark databases into a lightweight standalone package.</p>
+            </div>
+            <div class="card">
+                <div class="card-number">03 / ON-BOARD</div>
+                <h3>Android Core & CameraX</h3>
+                <p>Real-time telemetry monitoring of Galileo constellations, spoofing detection, and OpenCV-based visual tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="space-data">
+        <h2>Space-Enabled Intelligence</h2>
+        <p class="section-desc">Leveraging European space infrastructure for absolute operational awareness.</p>
+        
+        <div class="space-grid">
+            <div class="space-card">
+                <h3>Galileo Constellation Monitoring</h3>
+                <p>Continuous tracking of European Galileo satellite signals via `GnssStatus`. Evaluating active fixes and monitoring signal integrity to instantly flag spoofing anomalies.</p>
+            </div>
+            <div class="space-card">
+                <h3>Copernicus EMS Integration</h3>
+                <p>Utilizing pre-trip satellite imagery layers of crisis zones to automatically exclude compromised roads and route emergency teams safely.</p>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="demo">
+        <h2>Prototype Demonstration</h2>
+        <p class="section-desc">Test builds, documentation, and visual proof of concept.</p>
+        
+        <div class="demo-box">
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Ready for evaluation on target Android hardware.</p>
+            <a href="#" class="btn-primary" style="margin-bottom: 20px;">Download ORVIX_v1.0.apk</a>
+            
+            <div class="media-placeholder">
+                <span>[ пеніс (колись тут буде демонстрація на відео) ]</span>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="team">
+        <h2>Project Team</h2>
+        <p class="section-desc">Engineering and development crew.</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Danylo</h4>
+                <p>Architecture & Logic</p>
+            </div>
+            <div class="team-member">
+                <h4>Solomiia</h4>
+                <p>Frontend & UI/UX</p>
+            </div>
+            <div class="team-member">
+                <h4>Andrew</h4>
+                <p>CameraX & OpenCV</p>
+            </div>
+            <div class="team-member">
+                <h4>Anastasia</h4>
+                <p>GNSS & Sensors</p>
+            </div>
+            <div class="team-member">
+                <h4>Daria</h4>
+                <p>Data & GIS Pipeline</p>
+            </div>
+            <div class="team-member">
+                <h4>ХУЙ</h4>
+                <p>Presentation & Video</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="roadmap">
+        <h2>Roadmap & Prototype Limitations</h2>
+        <p class="section-desc">Transparent overview of current 48-hour
+             hackathon scope vs. future production rollout.</p>
+        
+        <div class="roadmap-container">
+            <div class="roadmap-item">
+                <h4>Hackathon Scope (Current 48H)</h4>
+                <p>Standalone offline Android APK, static routing packages for pre-tested urban zones, bench-tested camera recognition via OpenCV, and simulated GNSS fault injections.</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 2: Live Cloud Integration</h4>
+                <p>Automated backend server deployment for continuous LLM news parsing and dynamic route updates without manual pre-packaging.</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 3: Fleet Deployment</h4>
+                <p>Integration with vehicle OBD sensors, hardware-level cryptographic OSNMA validation, and large-scale field tests with emergency services.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 ORVIX Team. Developed for CASSINI Hackathon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
