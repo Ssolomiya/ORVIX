@@ -116,7 +116,31 @@ nav {
 .nav-links a:hover::after {
     width: 100%;
 }
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
 
+   
+    .nav-links {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        max-width: 100%;
+        padding-bottom: 5px;
+        scrollbar-width: none; 
+    }
+    
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
 /*пачвапсрмоирлдолромпрсрппмролрдорпаапгг*/
 section {
     padding: 100px 50px;
